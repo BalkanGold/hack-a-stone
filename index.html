@@ -22,8 +22,41 @@
 	z-index: 5
 }
 #okno:target {display: block;}
+#mero {
+	width: 1223px;
+	height: 850px;
+	border-radius: 25px;
+	background-color: #D9D9D9;
+	position: absolute;
+	z-index: 5;
+	display: none;
+	margin-left: 90px;
+}
+#mero:target {display: block;}
 </style>
 <body style="margin: 0; padding: 0; background-color: #D2F1F3; background-image: url(backweb2.png)">
+	<div id="mero">
+		<div class="d-flex">
+			<div style="width: 683px; height: 850px">
+				<img src="R40.png" style="border-radius: 25px 0 0 25px">
+			</div>
+			<div style="width: 555px; height: 850px">
+				<a href="#"><img src="x.png" style="margin-top: 38px; margin-left: 483px; width: 30px; height: 30px"></a>
+				<h1 style="font-family: Comfortaa; font-weight: 700; font-size: 32px; margin-top: 18px; margin-left: 72px; width: 426px">Название мероприятия</h1>
+				<h2 style="font-family: Comfortaa; font-weight: 700; font-size: 24px; margin-top: 25px; margin-left: 72px">Тип мероприятия</h2>
+				<h3 style="font-family: Comfortaa; font-weight: 700; font-size: 24px; margin-top: 40px; margin-left: 72px">Описание </h3>
+				<img src="Rectangle 11.png" style="margin-top: 143px; margin-left: 72px">
+				<div class="d-flex">
+					<div style="margin-top: 27px; margin-left: 72px; width: 100px; height: 45px; background-color: #FFFFFF; border-radius: 25px">
+						<h1 style="padding-top: 12px; margin-left: 33px; font-family: Comfortaa; font-weight: 700; font-size: 20px">10б</h1>
+					</div>
+					<div style="margin-top: 27px; margin-left: 121px; width: 200px; height: 45px; background-color: #6EAC54; border-radius: 25px">
+						<a style="padding-top: 12px; margin-left: 33px; font-family: Comfortaa; font-weight: 700; font-size: 20px; color: #FFFFFF; padding-left: 25px">Я пойду</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="okno">
 		<div class="d-flex">
 			<img src="avatar.png" style="margin-top: 35px; margin-left: 202px; width: 150px">
@@ -61,8 +94,9 @@
 			<a href="login.html"><button style="width: 140px; height: 28px; border: none; border-radius: 25px; font-family: Comfortaa; font-weight: 700; font-size: 16px; z-index: 1; position: absolute">Войти</button></a>
 			<a href="register.html"><button style="margin-left: 165px; width: 140px; height: 28px; border: none; border-radius: 25px; font-family: Comfortaa; font-weight: 700; font-size: 16px; z-index: 2; position: absolute">Регистрация</button></a>
 		</div>
-		<div style="position: absolute">
-			<h1 style="margin-top: 21px; margin-left: 644px; width: 152px; height: 36px; font-family: Comfortaa; font-weight: 700; font-size: 32px">GoUpHill</h1>
+		<div class="d-flex" style="position: absolute">
+			<img src="favicon.png" style="margin-left: 590px; width: 50px; height: 50px; position: absolute">
+			<a href="index.html" style="margin-top: 21px; margin-left: 644px; width: 152px; height: 36px; font-family: Comfortaa; font-weight: 700; font-size: 32px; color: black; text-decoration: none; z-index: 5; position: absolute;">GoUpHill</a>
 		</div>
 		<div style="position: absolute">
 			<h1 style="margin-top: 128px; margin-left: 735px; width: 591px; font-family: Comfortaa; font-weight: 700; font-size: 36px; line-height: 40px">«Я не собираюсь побеждать горы – они такая же часть мира, как и люди. Я побеждаю себя.»<p style="margin-top: 50px; font-weight: 700; font-size: 24px; line-height: 40px">-Ванда Руткевич
@@ -73,7 +107,7 @@
 		<h1 style="font-family: Comfortaa; font-weight: 700; font-size: 40px; margin-left: 10px; padding-top: 5px">Самое интересное сегодня:</h1>
 	</div>
 	<div class="d-flex" style="width: 1013px">
-		<div style="margin-top: 25px; margin-left: 150px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
+		<a href="#mero" style="text-decoration: none"><div style="margin-top: 25px; margin-left: 150px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
 			<div class="col-12" style="width: 360px; height: 216px; background-color: #D9D9D9; border-radius: 25px 25px 0 0">
 				<img src="Rectangle 40.png" style="width: 100%; height: auto">
 			</div>
@@ -81,17 +115,17 @@
 				<h1 style="margin-top: 29px; margin-left: 25px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">Мероприятие<p>место</h1>
 				<h1 style="margin-top: 36px; margin-left: 70px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">10 б</h1>
 			</div>
-		</div>
-		<div style="margin-top: 25px; margin-left: 30px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
+		</div></a>
+		<a href="#mero" style="text-decoration: none"><div style="margin-top: 25px; margin-left: 30px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
 			<div class="col-12" style="width: 360px; height: 216px; background-color: #D9D9D9; border-radius: 25px 25px 0 0">
 				<img src="Rectangle 40 (1).png" style="width: 100%; height: auto">
 			</div>
 			<div class="d-flex">
 				<h1 style="margin-top: 29px; margin-left: 25px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">Мероприятие<p>место</h1>
 				<h1 style="margin-top: 36px; margin-left: 70px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">10 б</h1>
-			</div>
+			</div></a>
 		</div>
-		<div style="margin-top: 25px; margin-left: 30px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
+		<a href="#mero" style="text-decoration: none"><div style="margin-top: 25px; margin-left: 30px; height: 320px; background-color: #F6F6F6; border-radius: 25px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)">
 			<div class="col-12" style="width: 360px; height: 216px; background-color: #D9D9D9; border-radius: 25px 25px 0 0">
 				<img src="Rectangle 40 (2).png" style="width: 100%; height: auto">
 			</div>
@@ -99,7 +133,7 @@
 				<h1 style="margin-top: 29px; margin-left: 25px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">Мероприятие<p>место</h1>
 				<h1 style="margin-top: 36px; margin-left: 70px; font-family: Comfortaa; font-weight: 700; font-size: 24px; line-height: 26.76px; color: #000000">10 б</h1>
 			</div>
-		</div>
+		</div></a>
 	</div>
 	<div style="width: 100%">
 		<a href="affiche.html"><button style="margin-left: 610px; margin-top: 37px; width: 250px; height: 50px; border-radius: 25px; border: none; background-color: #6EAC54; color: #FFFFFF; font-family: Comfortaa; font-weight: 700; font-size: 24px">Вся афиша</button></a>
